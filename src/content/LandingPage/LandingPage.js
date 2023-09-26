@@ -64,24 +64,48 @@ const LandingPage = () => {
             <TabPanel>
               <Grid className="tabs-group-content">
                 <Column
-                  lg={16}
-                  md={8}
+                  md={4}
+                  lg={7}
                   sm={4}
                   className="landing-page__tab-content">
-                  Rapidly build beautiful and accessible experiences. The Carbon
-                  kit contains all resources you need to get started.
+                  <h2 className="landing-page__subheading">
+                    How is made Carbon?
+                  </h2>
+                  <p className="landing-page__p">
+                    Rapidly build beautiful and accessible experiences. The
+                    Carbon kit contains all resources you need to get started.
+                  </p>
+                </Column>
+                <Column md={4} lg={{ span: 8, offset: 7 }} sm={4}>
+                  <img
+                    className="landing-page__design"
+                    src={`${process.env.PUBLIC_URL}/tab-design.png`}
+                    alt="Carbon illustration"
+                  />
                 </Column>
               </Grid>
             </TabPanel>
             <TabPanel>
               <Grid className="tabs-group-content">
                 <Column
-                  lg={16}
-                  md={8}
+                  md={4}
+                  lg={7}
                   sm={4}
                   className="landing-page__tab-content">
-                  Carbon provides styles and components in Vanilla, React,
-                  Angular, and Vue for anyone building on the web.
+                  <h2 className="landing-page__subheading">
+                    Carbon capabillities
+                  </h2>
+                  <p className="landing-page__p">
+                    Carbon provides styles and components in Vanilla, React,
+                    Angular, and Vue for anyone building on the web.
+                  </p>
+                </Column>
+                <Column md={4} lg={{ span: 8, offset: 7 }} sm={4}>
+                  <img
+                    className="landing-page__developer"
+                    src={`${process.env.PUBLIC_URL}/tab-developer.png`}
+                    alt="Carbon illustration"
+                  />
                 </Column>
               </Grid>
             </TabPanel>
